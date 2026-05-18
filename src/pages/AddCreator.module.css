@@ -1,0 +1,22 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.textarea{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: flex-start;
+}
+
+.submit{
+    transition: all 0.5s ease;
+}
+
+.submit:hover{
+    transform: scale(1.1);
+}
+

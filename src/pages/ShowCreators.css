@@ -1,0 +1,7 @@
+.creators {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+}

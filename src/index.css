@@ -43,11 +43,18 @@
 }
 
 * {
-  padding: 0 20px;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #root {
   max-width: 100%;
+  max-height: 100%;
   margin: 0 auto;
   text-align: center;
 }
@@ -57,4 +64,19 @@ h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
+}
+
+.header h1{
+  height: 20px;
+  font-size:48px;
+  text-align: center;
+  color: #9ca3af;
+}
+
+.footer {
+  text-align: center;
+  height: 20px;
+  padding: 18px;
+  font-size: 18;
+  align-content: flex-end;
 }

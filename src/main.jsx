@@ -36,7 +36,7 @@ function Root() {
           <ShowCreators data={data}></ShowCreators>
         }/>
 
-        <Route path='view' element={
+        <Route path='view/:slug' element={
           <ViewCreator></ViewCreator>
         }/>
 

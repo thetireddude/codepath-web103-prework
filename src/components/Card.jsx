@@ -18,7 +18,7 @@ export default function Card( {name, url, description, imageURL}) {
                     </div>
                     <div className={styles.buttons}>
                         <div className={`${styles.button} ${styles['view-creator']}`}>
-                            <Link to='/view' state={{ creator: { name, url, description, imageURL } }}>
+                            <Link to={`/view/${name}`} state={{ creator: { name, url, description, imageURL } }}>
                                 <FontAwesomeIcon icon={faCircleInfo} />
                             </Link>
                         </div>

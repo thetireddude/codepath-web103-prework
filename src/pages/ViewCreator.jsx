@@ -1,19 +1,25 @@
 import Button from '../components/Button'
 import { Link } from 'react-router'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 import styles from './ViewCreator.module.css'
 import { supabase } from '../client.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { useEffect } from 'react'
 
 export default function ViewCreator() {
     const linkState = useLocation()
-    const creator = linkState?.state.creator
+    const creator = linkState?.state.creator    
 
     // console.log(linkState.state.creator)
 
     if (!creator) return <div><h2>No creator data</h2></div>
 
+    let { slug } = useParams();
+
+    useEffect(() => {
+        console.log(slug);
+    }, []);
 
     const handleDelete = async () => {
             console.log("deleting...")

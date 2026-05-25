@@ -59,10 +59,20 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    gap: 5px;
 }
 
 .header .button a {
     text-decoration: none;
+    color: white;
+}
+
+.header .button, .url{
+    transition: all 0.5s ease;
+}
+
+.header .button:hover, .url:hover {
+    transform: scale(1.3);
 }
 
 .url {

@@ -41,7 +41,7 @@ export default function AddCreator() {
 
     return (
         <div className={styles.content}>
-            <h1>Add Creator</h1>
+            <h2>Add Creator</h2>
 
             <div className={styles.form}>
                 <div className={styles.field}>

@@ -66,7 +66,7 @@ export default function EditCreator() {
 
     return (
         <div className={styles.content}>
-            <h1>Edit Creator</h1>
+            <h2>Edit Creator</h2>
             <div className={styles.form}>
                 <div className={styles.field}>
                     <label htmlFor="name">Name:</label>

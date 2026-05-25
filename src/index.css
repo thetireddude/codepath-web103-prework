@@ -66,6 +66,13 @@ h1 {
   margin: 32px 0;
 }
 
+h2 {
+  color: white;
+  font-size: 42px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+}
+
 .header h1{
   height: 20px;
   font-size:48px;

@@ -23,7 +23,7 @@ function Root() {
         setData(result.data)
     }
     fetchCreators()
-  }, []);
+  });
 
   return (
     <BrowserRouter>

@@ -5,27 +5,81 @@
 .container {
     display:flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 20px;
-    padding: 0;
+    padding: 40px;
 }
 
 .container .header {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0;
+    width: 100%;
+}
+
+.header .name {
+    margin: auto;
+    width: 50%;
+    text-wrap: wrap;
+    line-height: 1.3;
 }
 
 .image {
-    height: 500px;
-    width: 100%;
+    width: 50%;
     padding: 0;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .image img {
+    height:100%;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
+    /* object-fit: cover;
+    object-position: center; */
 }
+
+.link {
+    transition: all 0.5s ease;
+}
+
+.link:hover {
+    transform: scale(1.2);
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.description {
+    text-align: left;
+}
+
+.editBtn {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 12px;
+    min-width: 70px;
+    background-color: white;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.editBtn .editLink {
+    text-decoration: none;
+    color: black;
+}
+
+.editBtn:hover {
+    transform: scale(1.1);
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    align-self: center;
+}
+
+
 

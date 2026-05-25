@@ -8,12 +8,6 @@ export default function Card( {name, url, description, imageURL}) {
         backgroundImage: `url(${imageURL})`
     };
 
-    const buttonStyle = {
-        color: `white`
-    };
-
-
-
     return (
         <div className={styles.container}>
             <div className={styles.bg} style={bgStyle}></div>
@@ -37,7 +31,7 @@ export default function Card( {name, url, description, imageURL}) {
                 </div>
                 <div className={styles.url}>
                     <a target='_blank' href={url}>
-                        <FontAwesomeIcon icon={faLink} style={buttonStyle} />
+                        <FontAwesomeIcon icon={faLink}/>
                     </a>
                 </div>
                 <div className={styles.description}>

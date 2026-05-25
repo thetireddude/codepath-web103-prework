@@ -1,8 +1,8 @@
 import Button from '../components/Button'
 import { Link } from 'react-router'
-import styles from './AddCreator.module.css'
 import { supabase } from '../client.js'
 import { useRef } from 'react';
+import styles from './AddCreator.module.css'
 
 export default function AddCreator() {
 
@@ -40,9 +40,8 @@ export default function AddCreator() {
     }
 
     return (
-        <>
+        <div className={styles.content}>
             <h1>Add Creator</h1>
-            <Button name='Cancel' link='/'></Button>
 
             <div className={styles.form}>
                 <div className={styles.field}>
@@ -61,11 +60,11 @@ export default function AddCreator() {
                     <label htmlFor="imageURL">Image URL:</label>
                     <input ref={imageRef} type="text" id="imageURL" name="imageURL"/>
                 </div>
-                <div>
-                    <button className={styles.submit} type='submit' onClick={handleSubmit}>Submit</button>
-                </div>
             </div>
-
-        </>
+            <div className={styles.buttons}>
+                    <Button name='Cancel' link='/creators'></Button>
+                    <button className={styles.submitBtn} type='submit' onClick={handleSubmit}>Submit</button>
+            </div>
+        </div>
     )
 }

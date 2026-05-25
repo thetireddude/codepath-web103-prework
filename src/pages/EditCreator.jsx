@@ -65,11 +65,8 @@ export default function EditCreator() {
     }
 
     return (
-        <>
+        <div className={styles.content}>
             <h1>Edit Creator</h1>
-            <Button name='Cancel' link='/'></Button>
-            <button className={styles.delete} onClick={handleDelete}>Delete</button>
-
             <div className={styles.form}>
                 <div className={styles.field}>
                     <label htmlFor="name">Name:</label>
@@ -87,11 +84,12 @@ export default function EditCreator() {
                     <label htmlFor="imageURL">Image URL:</label>
                     <input ref={imageRef} type="text" id="imageURL" name="imageURL"/>
                 </div>
-                <div>
-                    <button className={styles.submit} type='submit' onClick={handleSubmit}>Confirm</button>
-                </div>
             </div>
-
-        </>
+            <div className={styles.buttons}>
+                    <Button name='Cancel' link='/creators'></Button>
+                    <button className={styles.submitBtn} type='submit' onClick={handleSubmit}>Confirm</button>
+                    <button className={styles.deleteBtn} onClick={handleDelete}>Delete</button>
+            </div>
+        </div>
     )
 }

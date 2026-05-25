@@ -1,21 +1,47 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
 .form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     align-items: flex-start;
+    width: 80%;
+    color: white;
 }
 
-.textarea{
+.form .field {
     display: flex;
     flex-direction: column;
     gap: 7px;
-    align-items: flex-start;
+    text-align: left;
+    width: 100%;
 }
 
-.submit, .delete{
+.form .field input, .form .field textarea {
+    width: 90%;
+    padding: 12px;
+    background-color: rgb(224, 216, 216);
+    border: 2px solid black;
+    border-radius: 7px;
+    color: black;
+    font-size: 18px;
+}  
+
+.submitBtn, .deleteBtn{
     transition: all 0.5s ease;
 }
 
-.submit:hover, .delete:hover{
+.submitBtn:hover, .deleteBtn:hover{
     transform: scale(1.1);
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
 }

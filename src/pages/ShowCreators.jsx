@@ -1,7 +1,7 @@
 import { Link } from 'react-router'
 import Button from '../components/Button'
 import Card from '../components/Card'
-import './ShowCreators.css'
+import styles from './ShowCreators.module.css'
 
 export default function ShowCreators({ data }) {
 
@@ -14,7 +14,7 @@ export default function ShowCreators({ data }) {
         content = <h2>There are no creators to display</h2>
     } else {
         content = 
-            <div className='creators'>
+            <div className={styles.creators}>
                 {creators.map((creator, i) => (
                     <Card
                         key={i}
@@ -28,7 +28,7 @@ export default function ShowCreators({ data }) {
     }
 
     return (
-        <div className='content'>
+        <div className={styles.content}>
             <h1>Creators</h1>
             <Button name='Home' link='/'></Button>
             <Button name='Add Creator' link="/add"></Button>

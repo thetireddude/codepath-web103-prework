@@ -4,7 +4,6 @@
     border: 3px solid white;
     padding: 12px;
     margin: 12px 0;
-    /* background-color: rgb(94, 110, 122); */
     color: white;
     position: relative;
     overflow: hidden; 
@@ -46,10 +45,6 @@
     z-index: 1;
 }
 
-.space {
-    height: 100px;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -64,11 +59,9 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding: 0;
 }
 
-.header .buttons .button, .header .buttons .button a {
-    padding: 0;
+.header .button a {
     text-decoration: none;
 }
 
@@ -83,5 +76,4 @@
 
 .description {
     text-align: left;
-    /* margin-top: 12px; */
 }

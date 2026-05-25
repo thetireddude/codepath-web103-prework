@@ -31,7 +31,7 @@ export default function ShowCreators({ data }) {
         <div className={styles.content}>
             <h1>Creators</h1>
             <div className={styles.buttons}>
-                <Button name='Home' link='/'></Button>
+                {/* <Button name='Home' link='/'></Button> */}
                 <Button name='Add Creator' link="/add"></Button>
             </div>  
             {content}

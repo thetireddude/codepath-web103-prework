@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import './Button.css'
+import styles from './Button.module.css'
 
 export default function Button( { name, link} ) {
     return (
@@ -9,7 +9,7 @@ export default function Button( { name, link} ) {
         //     </div>
         // </div>
         <button>
-            <Link className='link' to={link}>{name}</Link>
+            <Link className={styles.link} to={link}>{name}</Link>
         </button>
     )
 }

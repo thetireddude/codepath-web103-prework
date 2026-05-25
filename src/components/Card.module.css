@@ -2,7 +2,7 @@
     width: 400px;
     min-height: 300px;
     border: 3px solid white;
-    padding: 12px 0;
+    padding: 12px;
     margin: 12px 0;
     /* background-color: rgb(94, 110, 122); */
     color: white;
@@ -41,6 +41,7 @@
     flex-direction: column;
     justify-content: flex-end;
     text-align: left;
+    gap: 12px;
     padding: 0;
     z-index: 1;
 }
@@ -82,5 +83,5 @@
 
 .description {
     text-align: left;
-    margin-top: 12px;
+    /* margin-top: 12px; */
 }

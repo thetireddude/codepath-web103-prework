@@ -1,5 +1,5 @@
-import './Card.css'
 import { Link } from 'react-router'
+import styles from './Card.module.css'
 
 export default function Card( {name, url, description, imageURL}) {
     const bgStyle = {
@@ -7,26 +7,26 @@ export default function Card( {name, url, description, imageURL}) {
     };
 
     return (
-        <div className="container">
-            <div className='bg' style={bgStyle}></div>
-            <div className='content'>
-                <div className="header">
-                    <div className="name">
+        <div className={styles.container}>
+            <div className={styles.bg} style={bgStyle}></div>
+            <div className={styles.content}>
+                <div className={styles.header}>
+                    <div className={styles.name}>
                         {name}
                     </div>
-                    <div className='buttons'>
-                        <div className="button view-creator">
+                    <div className={styles.buttons}>
+                        <div className={`${styles.button} ${styles['view-creator']}`}>
                             <Link to='/view' state={{ creator: { name, url, description, imageURL } }}>ℹ️</Link>
                         </div>
-                        <div className="button edit-creator">
+                        <div className={`${styles.button} ${styles['edit-creator']}`}>
                             <Link to='/edit' state={{ creator: { name, url, description, imageURL } }}>📝</Link>
                         </div>
                     </div>
                 </div>
-                <div className="url">
+                <div className={styles.url}>
                     <a target='_blank' href={url}>🔗</a>
                 </div>
-                <div className="description">
+                <div className={styles.description}>
                     {description}
                 </div>
             </div>

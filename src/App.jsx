@@ -5,8 +5,18 @@ import heroImg from './assets/hero.png'
 import { Link } from "react-router";
 import styles from './App.module.css'
 import Button from './components/Button.jsx'
+import { useNavigate } from 'react-router-dom';
 
 export default function App() {
+
+  const navigate = useNavigate();
+
+  // Standard redirect
+  // navigate('/creators'); 
+
+  // Replace redirect (prevents going back)
+  navigate('/creators', { replace: true }); 
+
   return (
     <>
       <h1>Creatorverse</h1>

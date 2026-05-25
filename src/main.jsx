@@ -29,7 +29,8 @@ function Root() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={
-          <App />
+          // <App />
+          <ShowCreators data={data}></ShowCreators>
         }/>
 
         <Route path='creators' element={

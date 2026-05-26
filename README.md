@@ -43,7 +43,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://imgur.com/a/oVoBG7Y' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Video Walkthrough](public/demo.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  N-Studio

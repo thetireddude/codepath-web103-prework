@@ -49,7 +49,7 @@ export default function AddCreator() {
                     <input ref={nameRef}type="text" id="name" name="name"/>
                 </div>
                 <div className={styles.field}>
-                    <label htmlFor="url">URL:</label>
+                    <label htmlFor="url">Socials Link:</label>
                     <input ref={urlRef} type="text" id="url" name="url"/>
                 </div>
                 <div className={`${styles.field} ${styles.textarea}`}>
@@ -57,7 +57,7 @@ export default function AddCreator() {
                     <textarea ref={descRef} id="description" name="description" rows='5' cols='40'/>
                 </div>
                 <div className={styles.field}>
-                    <label htmlFor="imageURL">Image URL:</label>
+                    <label htmlFor="imageURL">Image:</label>
                     <input ref={imageRef} type="text" id="imageURL" name="imageURL"/>
                 </div>
             </div>

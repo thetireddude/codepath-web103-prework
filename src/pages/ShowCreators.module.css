@@ -4,6 +4,68 @@
     align-items: center;
 }
 
+.space {
+    height: 100vh;
+    width:100%;
+    background-image: url('https://images.unsplash.com/photo-1540655037529-dec987208707?q=80&w=1821&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+
+.space .creatorverse, .space .buttons {
+    width: 50%;
+}
+
+.space .buttons {
+    align-self: flex-end;
+    padding: 50px;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+}
+
+.space .creatorverse {
+    padding: 50px;
+    text-align: left;
+    text-shadow: 3px 3px 5px black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.creatorverse h1 {
+    font-size: 100px;
+}
+
+.creatorverse h2 {
+    font-size: 80px;
+}
+
+.space .buttons Button {
+    border: none;
+}
+
+.allCreatorsBtn {
+    padding: 20px;
+    border-radius: 12px;
+    min-width: 70px;
+    background-color: white;
+    transition: all 0.5s ease;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.allCreatorsBtn:hover {
+    transform: scale(1.1);
+}
+
+ 
 .creators {
     display: inline-flex;
     gap: 12px;

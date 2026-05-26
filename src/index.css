@@ -42,6 +42,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
 }
@@ -50,6 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 0;
 }
 
 #root {

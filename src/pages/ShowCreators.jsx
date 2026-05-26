@@ -2,8 +2,18 @@ import { Link } from 'react-router'
 import Button from '../components/Button'
 import Card from '../components/Card'
 import styles from './ShowCreators.module.css'
+import { useEffect } from 'react'
+
 
 export default function ShowCreators({ data }) {
+
+
+    useEffect(() => {
+        const header = document.querySelector('.header')
+        const prevDisplay = header ? header.style.display : null
+        if (header) header.style.display = 'none'
+        return () => { if (header) header.style.display = prevDisplay || '' }
+    }, [])
 
     console.log(data)
 
@@ -29,9 +39,20 @@ export default function ShowCreators({ data }) {
 
     return (
         <div className={styles.content}>
-            <h2>Creators</h2>
+            <div className={styles.space}>
+                <div className={styles.creatorverse}>
+                    <h2>The</h2>
+                    <h1>Creatorverse</h1>
+                </div>
+                <div className={styles.buttons}>
+                    <a className={styles.allCreatorsBtn} href='#allCreatorsBtnTarget'>All Creators</a>
+                    <Button name='Add Creator' link="/add"></Button>
+                </div>
+            </div>
+            <div id="allCreatorsBtnTarget">
+                <h2>Creators</h2>
+            </div>
             <div className={styles.buttons}>
-                {/* <Button name='Home' link='/'></Button> */}
                 <Button name='Add Creator' link="/add"></Button>
             </div>  
             {content}

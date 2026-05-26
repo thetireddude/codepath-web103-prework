@@ -8,6 +8,7 @@
     align-items: flex-start;
     gap: 20px;
     padding: 40px;
+    max-width: 100%;
 }
 
 .container .header {

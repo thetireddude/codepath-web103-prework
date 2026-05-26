@@ -3,10 +3,10 @@ import Button from '../components/Button'
 import Card from '../components/Card'
 import styles from './ShowCreators.module.css'
 import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 
 export default function ShowCreators({ data }) {
-
 
     useEffect(() => {
         const header = document.querySelector('.header')
@@ -15,7 +15,7 @@ export default function ShowCreators({ data }) {
         return () => { if (header) header.style.display = prevDisplay || '' }
     }, [])
 
-    console.log(data)
+    // console.log(data)
 
     let creators = data
     let content = null
@@ -36,6 +36,23 @@ export default function ShowCreators({ data }) {
                 ))}
             </div>
     }
+
+    const location = useLocation()
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (location?.hash) {
+                const id = location.hash.slice(1)
+                const target = document.getElementById(id)
+                if (target){
+                    target.scrollIntoView({ behavior: 'smooth' })
+                }
+            }
+        }, 500);
+
+        return () => clearTimeout(timer); //cleanup
+        
+    }, [])
 
     return (
         <div className={styles.content}>

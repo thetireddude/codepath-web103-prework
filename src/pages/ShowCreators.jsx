@@ -62,11 +62,11 @@ export default function ShowCreators({ data }) {
                     <h1>Creatorverse</h1>
                 </div>
                 <div className={styles.buttons}>
-                    <a className={styles.allCreatorsBtn} href='#allCreatorsBtnTarget'>All Creators</a>
+                    <a className={styles.allCreatorsBtn} href='#Creators'>All Creators</a>
                     <Button name='Add Creator' link="/add"></Button>
                 </div>
             </div>
-            <div id="allCreatorsBtnTarget">
+            <div id="Creators">
                 <h2>Creators</h2>
             </div>
             <div className={styles.buttons}>

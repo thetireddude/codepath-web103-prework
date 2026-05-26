@@ -48,7 +48,7 @@ export default function EditCreator() {
 
         console.log("edits updated in database, returning to /creators")
 
-        window.location.href = '/creators#allCreatorsBtnTarget'
+        window.location.href = '/creators#Creators'
     }
 
     const handleDelete = async () => {
@@ -61,7 +61,7 @@ export default function EditCreator() {
 
         console.log("creator deleted, returning to /creators")
 
-        window.location.href = '/creators#allCreatorsBtnTarget'
+        window.location.href = '/creators#Creators'
     }
 
     return (
@@ -86,7 +86,7 @@ export default function EditCreator() {
                 </div>
             </div>
             <div className={styles.buttons}>
-                    <Button name='Cancel' link='/creators#allCreatorsBtnTarget'></Button>
+                    <Button name='Cancel' link='/creators#Creators'></Button>
                     <button className={styles.submitBtn} type='submit' onClick={handleSubmit}>Confirm</button>
                     <button className={styles.deleteBtn} onClick={handleDelete}>Delete</button>
             </div>

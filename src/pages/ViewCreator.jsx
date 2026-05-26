@@ -31,7 +31,7 @@ export default function ViewCreator() {
     
             console.log("creator deleted, returning to /creators")
     
-            window.location.href = '/creators#allCreatorsBtnTarget'
+            window.location.href = '/creators#Creators'
         }
 
 
@@ -55,7 +55,7 @@ export default function ViewCreator() {
                     {creator.description}
                 </div>
                 <div className={styles.buttons}>
-                    <Button name='Back' link='/creators#allCreatorsBtnTarget'></Button>
+                    <Button name='Back' link='/creators#Creators'></Button>
                     <div className={`${styles.editBtn} ${styles['edit-creator']}`}>
                         <Link className={styles.editLink} to='/edit' state={{ creator: { name: creator.name, url: creator.url, description: creator.description,imageURL: creator.imageURL } }}>
                             Edit

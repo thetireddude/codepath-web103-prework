@@ -1,7 +1,7 @@
 import Button from '../components/Button'
 import { Link } from 'react-router'
 import { useLocation } from 'react-router-dom'
-import styles from './AddCreator.module.css'
+import styles from './EditCreator.module.css'
 import { supabase } from '../client.js'
 import { useRef, useEffect } from 'react';
 

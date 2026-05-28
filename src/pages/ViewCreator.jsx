@@ -31,7 +31,7 @@ export default function ViewCreator() {
     
             console.log("creator deleted, returning to /creators")
     
-            window.location.href = '/creators#Creators'
+            window.location.href = '/#Creators'
         }
 
 

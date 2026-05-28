@@ -48,7 +48,7 @@ export default function EditCreator() {
 
         console.log("edits updated in database, returning to /creators")
 
-        window.location.href = '/creators#Creators'
+        window.location.href = '/#Creators'
     }
 
     const handleDelete = async () => {
@@ -61,7 +61,7 @@ export default function EditCreator() {
 
         console.log("creator deleted, returning to /creators")
 
-        window.location.href = '/creators#Creators'
+        window.location.href = '/#Creators'
     }
 
     return (

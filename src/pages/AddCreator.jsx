@@ -36,7 +36,7 @@ export default function AddCreator() {
 
         console.log("added to database, returning to /creators")
 
-        window.location.href = '/creators#Creators'
+        window.location.href = '/#Creators'
     }
 
     return (
